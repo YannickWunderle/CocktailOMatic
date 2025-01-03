@@ -75,6 +75,27 @@ void showLEDs() {
   FastLED.show();
 }
 
+void LEDsFinish() {
+  b_red = 0;
+  b_green = 0;
+  b_blue = 0;
+  showLEDs();
+  b_green = 120;
+  for (int ID = 0; ID < NUM_LEDS; ID++) {
+    leds[ID].r = b_green;
+    FastLED.show();
+    delay(10);
+  }
+  for (int ID = 0; ID < NUM_LEDS; ID++) {
+    leds[ID].r = 0;
+    FastLED.show();
+    delay(10);
+  }
+  b_red = 0;
+  b_green = 0;
+  b_blue = LED_IDLE_Brightness;
+}
+
 void LEDsIdle() {
   if (millis() - previousMillisStripe > 85) {
     previousMillisStripe = millis();
@@ -157,7 +178,8 @@ void mixCocktail() {
       IngredientRatio[i] = Prime_List[Order.OrderId].IngredientVolume[i];
       if (Order.OrderId == PRIME_ID) {
         Order.OrderVolume = ORDER_PRIME * 11;
-      }if (Order.OrderId == FLUSH_ID) {
+      }
+      if (Order.OrderId == FLUSH_ID) {
         Order.OrderVolume = ORDER_FLUSH * 11;
       }
     }
@@ -182,7 +204,7 @@ void mixCocktail() {
     if (volume > 0) {
       showLEDsIngredient(i);
       pump(volume);
-      Ingredients_List[i].volume += (double(volume)/1000);
+      Ingredients_List[i].volume += (double(volume) / 1000);
     }
   }
   init_Valves(true);

@@ -234,7 +234,7 @@ void Print_NonAlcoholicCocktailsPage(WiFiClient pWifiClient) {
   HTML_AlcoholicList += "<thead>";
   HTML_AlcoholicList += "<tr>";
   HTML_AlcoholicList += "<th scope=\"colgroup\" colspan=\"2\" style=\"text-align:center;\">Cocktail</th>";
-  HTML_AlcoholicList += "<th scope=\"colgroup\" colspan=\"2\" style=\"text-align:center;\">Gr&ouml&szlige</th>";
+  HTML_AlcoholicList += "<th scope=\"colgroup\" colspan=\"2\" style=\"text-align:center;\">Gr&ouml&szlige (ml)</th>";
   HTML_AlcoholicList += "</tr>";
   HTML_AlcoholicList += "</thead>";
   HTML_AlcoholicList += "<tbody>";
@@ -246,8 +246,8 @@ void Print_NonAlcoholicCocktailsPage(WiFiClient pWifiClient) {
     HTML_AlcoholicList += "<td><strong>" + NonAlcoholic_List[i].RecipeName + "</strong></br>";
     HTML_AlcoholicList += "<em>" + getRecipeIngredients(NonAlcoholic_List[i]) + "</em></td>";
 
-    HTML_AlcoholicList += "<td><a href=\"/Bestellung_Alkoholfrei/ORDER_SMALL/" + String(i) + "\" ><button class=\"button\">Klein</button></a></td>";
-    HTML_AlcoholicList += "<td><a href=\"/Bestellung_Alkoholfrei/ORDER_LARGE/" + String(i) + "\" ><button class =\"button\">Gro&szlig</button></a></td>";
+    HTML_AlcoholicList += "<td><a href=\"/Bestellung_Alkoholfrei/ORDER_SMALL/" + String(i) + "\" ><button class=\"button\">125</button></a></td>";
+    HTML_AlcoholicList += "<td><a href=\"/Bestellung_Alkoholfrei/ORDER_LARGE/" + String(i) + "\" ><button class =\"button\">200</button></a></td>";
   }
   HTML_AlcoholicList += "</tbody>";
   HTML_AlcoholicList += "</table>";
@@ -310,7 +310,7 @@ void Print_AlcoholicCocktailsPage(WiFiClient pWifiClient) {
   HTML_AlcoholicList += "<thead>";
   HTML_AlcoholicList += "<tr>";
   HTML_AlcoholicList += "<th scope=\"colgroup\" colspan=\"2\" style=\"text-align:center;\">Cocktail</th>";
-  HTML_AlcoholicList += "<th scope=\"colgroup\" colspan=\"2\" style=\"text-align:center;\">Gr&ouml&szlige</th>";
+  HTML_AlcoholicList += "<th scope=\"colgroup\" colspan=\"2\" style=\"text-align:center;\">Gr&ouml&szlige (ml)</th>";
   HTML_AlcoholicList += "</tr>";
   HTML_AlcoholicList += "</thead>";
   HTML_AlcoholicList += "<tbody>";
@@ -322,8 +322,8 @@ void Print_AlcoholicCocktailsPage(WiFiClient pWifiClient) {
     HTML_AlcoholicList += "<td><strong>" + Alcoholic_List[i].RecipeName + "</strong></br>";
     HTML_AlcoholicList += "<em>" + getRecipeIngredients(Alcoholic_List[i]) + "</em></td>";
 
-    HTML_AlcoholicList += "<td><a href=\"/Bestellung_Alkoholisch/ORDER_SMALL/" + String(i) + "\" ><button class=\"button\">Klein</button></a></td>";
-    HTML_AlcoholicList += "<td><a href=\"/Bestellung_Alkoholisch/ORDER_LARGE/" + String(i) + "\" ><button class =\"button\">Gro&szlig</button></a></td>";
+    HTML_AlcoholicList += "<td><a href=\"/Bestellung_Alkoholisch/ORDER_SMALL/" + String(i) + "\" ><button class=\"button\">125</button></a></td>";
+    HTML_AlcoholicList += "<td><a href=\"/Bestellung_Alkoholisch/ORDER_LARGE/" + String(i) + "\" ><button class =\"button\">200</button></a></td>";
   }
   HTML_AlcoholicList += "</tbody>";
   HTML_AlcoholicList += "</table>";

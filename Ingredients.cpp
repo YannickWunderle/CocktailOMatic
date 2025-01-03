@@ -13,14 +13,14 @@ Ingredient Tequila = {"Tequila",50,0,40,-128,0};
 Ingredient Rum = {"Rum",25,0,75,-110,0};
                                                   //Grenadine, Sirup, Lime,Orange, Ananas, Cola, Ingwer, Soda, Vodka, Tequila, Rum
 extern struct Recipe Tropical_Sunset =       {"Gehirntot",{0,  0,      0,    0,     0,      0,    0,      0,    10,       10,      10}};
-extern struct Recipe Daiquiri =               {"Daiquiri",{0,  2,      3,    0,     0,      0,    0,      0,    0,       0,      5}};
+extern struct Recipe Daiquiri =               {"Daiquiri",{0,  2,      2,    0,     0,      0,    0,      2,    0,       0,      4}};
 extern struct Recipe Planeters =       {"Planeters Punch",{1,  1,      3,    6,     0,      0,    0,      0,    0,       0,      6}};
-extern struct Recipe Mojito =                   {"Mojito",{0,  2,      2,    0,     0,      0,    0,      6,    0,       0,      6}};
+extern struct Recipe Mojito =                   {"Mojito",{0,  2,      2,    0,     0,      0,    0,      6,    0,       0,      5}};
 extern struct Recipe Tequila_Mojito =   {"Tequila Mojito",{0,  2,      2,    0,     0,      0,    0,      8,    0,       5,      0}};
-extern struct Recipe Tequila_Sunrise = {"Tequila Sunrise",{2,  0,      1,    10,     0,      0,    0,      0,    0,       6,      0}};
+extern struct Recipe Tequila_Sunrise = {"Tequila Sunrise",{2,  0,      1,    10,     0,      0,    0,      0,    0,       5,      0}};
 extern struct Recipe Julie =                     {"Julie",{2,  0,      0,    0,     10,      0,    0,      0,    0,       5,      0}};
 extern struct Recipe Tommys =         {"Tommys Margarita",{0,  2,      3,    0,     0,      0,    0,      0,    0,       6,      0}};
-extern struct Recipe Cuba_Libre =           {"Cuba Libre",{0,  0,      1,    0,     0,      10,    0,      0,    0,       0,      4}};
+extern struct Recipe Cuba_Libre =           {"Cuba Libre",{0,  0,      1,    0,     0,      11,    0,      0,    0,       0,      4}};
 extern struct Recipe Batanga =                 {"Batanga",{0,  0,      3,    0,     0,      11,    0,      0,    0,       4,      0}};
 extern struct Recipe Lover =                 {"Mr. Lover",{0,  0,      3,    0,     6,      0,    0,      0,    0,       2,      2}};
 extern struct Recipe Bitch =              {"Skinny Bitch",{0,  0,      3,    0,     0,      0,    0,      8,    4,       0,      0}};
@@ -32,6 +32,7 @@ extern struct Recipe DarknS =          {"Dark and Stormy",{0,  0,      4,    0, 
 extern struct Recipe T_Mule =             {"Tequila Mule",{0,  0,      2,    0,     0,      0,    12,      0,    0,       6,      0}};
 extern struct Recipe GingerCocktail =           {"Ginger",{0,  0,      2,    4,     4,      0,    10,      0,    0,       4,      0}};
 extern struct Recipe Ambassador =           {"Ambassador",{0,  1,      0,    6,     0,      0,    0,      0,    0,       2,      0}};
+extern struct Recipe real =                      {"REAL",{1,  1,      1,    1,     1,      1,    1,      1,    1,       1,      1}};
 
 //----------------------Alkoholfrei---------------------------------------------------------------------
                                                   //Grenadine, Sirup, Lime,Orange, Ananas, Cola, Ingwer, Soda, Vodka, Tequila, Rum
@@ -39,9 +40,13 @@ extern struct Recipe Sober_Sunset =       {"Sober_Sunset",{1,  1,      1,    3, 
 extern struct Recipe Cola_Sauer =            {"Cola-Lime",{0,  1,      1,    0,     0,      6,    0,      0,    0,       0,      0}};
 extern struct Recipe Fruit_Punch =         {"Fruit Punch",{2,  1,      3,    0,     4,      0,    0,      0,    0,       0,      0}};
 extern struct Recipe Ginger_Sweet =       {"Sweet Ginger",{1,  1,      0,    0,     0,      0,    6,      2,    0,       0,      0}};
-extern struct Recipe Ananas_drink =                 {"Ananas",{0,  0,      0,    0,     3,      0,    0,      2,    0,       0,      0}};
-extern struct Recipe Orange_drink =                   {"Orange",{0,  0,      0,    3,     0,      0,    0,      2,    0,       0,      0}};
-extern struct Recipe Cola_drink =                       {"Cola",{0,  0,      0,    0,     0,      1,    0,      0,    0,       0,      0}};
+extern struct Recipe Ananas_drink =             {"Ananas",{0,  0,      0,    0,     3,      0,    0,      2,    0,       0,      0}};
+extern struct Recipe Orange_drink =             {"Orange",{0,  0,      0,    3,     0,      0,    0,      2,    0,       0,      0}};
+extern struct Recipe Cola_drink =                 {"Cola",{0,  0,      0,    0,     0,      1,    0,      0,    0,       0,      0}};
+extern struct Recipe Cola_frenchkiss ={"Cola french kiss",{0,  1,      1,    5,     0,      10,    0,      3,    0,       0,      0}};
+extern struct Recipe Baby_Mochito =       {"Baby Mochito",{0,  2,      2,    0,     0,      0,    6,      6,    0,       0,      0}};
+extern struct Recipe Virgin_Ginger =     {"Vergin Ginger",{0,  0,      1,    2,     2,      0,    4,      0,    0,       0,      0}};
+extern struct Recipe Virgin_beach ={"Virgin on the beach",{1,  0,      1,    3,     3,      1,    0,      0,    0,       0,      0}};
 
 //----------------------Prime and Shots---------------------------------------------------------------------
                                                   //Grenadine, Sirup, Lime,Orange, Ananas, Cola, Ingwer, Soda, Vodka, Tequila, Rum
@@ -57,12 +62,19 @@ extern struct Recipe pur_Vodka =                 {"Vodka",{0,  0,      0,    0, 
 extern struct Recipe pur_Tequila =             {"Tequila",{0,  0,      0,    0,     0,      0,    0,      0,    0,       1,      0}};
 extern struct Recipe pur_Rum =                     {"Rum",{0,  0,      0,    0,     0,      0,    0,      0,    0,       0,      1}};
 extern struct Recipe pur_all =               {"Prime all",{1,  1,      1,    1,     1,      1,    1,      1,    1,       1,      1}};
-extern struct Recipe flush_all =               {"Flush all 1 Liter",{1,  1,      1,    1,     1,      1,    1,      1,    1,       1,      1}};
+extern struct Recipe flush_all =     {"Flush all 1 Liter",{1,  1,      1,    1,     1,      1,    1,      1,    1,       1,      1}};
+extern struct Recipe shot_gentleman ={"Tequila gentleman",{0,  1,      1,    0,     0,      0,    0,      0,    0,       2,      0}};
+extern struct Recipe shot_Sour =            {"Vodka sour",{0,  0,      1,    0,     0,      0,    0,      0,    1,       0,      0}};
+extern struct Recipe shot_Granate =            {"Grenade",{1,  0,      0,    0,     0,      0,    0,      0,    1,       0,      0}};
+extern struct Recipe shot_GingerRum =       {"Ginger Rum",{0,  0,      0,    0,     0,      0,    1,      0,    0,       0,      1}};
+extern struct Recipe shot_Judy =             {"Judys jam",{0,  0,      1,    0,     2,      0,    0,      0,    0,       0,      3}};
+extern struct Recipe shot_Cuba =                  {"Cuba",{0,  0,      0,    0,     0,      1,    0,      0,    0,       0,      1}};
+extern struct Recipe shot_Vodinas =            {"Vodinas",{0,  0,      0,    0,     1,      0,    0,      0,    1,       0,      0}};
 
 extern Ingredient Ingredients_List[11] = {Grenadine,ZuckerSirup,Lime, Orange, Ananas, Cola, Ingwer, Soda, Vodka, Tequila, Rum};
-extern Recipe Alcoholic_List[nb_cocktails] = {Daiquiri,Planeters,Mojito,Cuba_Libre,DarknS,Painkiller,Lover,LongIIT,Batanga,Tequila_Sunrise,Tequila_Mojito,Julie,Tommys,T_Mule,GingerCocktail,Ambassador,Moscow_M,SexOtB,Bitch};
-extern Recipe NonAlcoholic_List[nb_cocktails] = {Sober_Sunset,Cola_Sauer,Fruit_Punch,Ginger_Sweet,Ananas_drink,Orange_drink,Cola_drink};
-extern Recipe Prime_List[nb_cocktails] = {pur_Grenadine,pur_Sirup,pur_Lime,pur_Orange,pur_Ananas,pur_Cola,pur_Ingwer,pur_Soda,pur_Vodka,pur_Tequila,pur_Rum,pur_all,flush_all};
+extern Recipe Alcoholic_List[nb_cocktails] = {Daiquiri,Planeters,Mojito,Cuba_Libre,DarknS,Painkiller,Lover,LongIIT,Batanga,Tequila_Sunrise,Tequila_Mojito,Julie,Tommys,T_Mule,GingerCocktail,Ambassador,Moscow_M,SexOtB,Bitch,real};
+extern Recipe NonAlcoholic_List[nb_cocktails] = {Sober_Sunset,Cola_Sauer,Fruit_Punch,Ginger_Sweet,Ananas_drink,Orange_drink,Cola_drink,Cola_frenchkiss,Baby_Mochito,Virgin_Ginger,Virgin_beach};
+extern Recipe Prime_List[nb_cocktails] = {pur_Grenadine,pur_Sirup,pur_Lime,pur_Orange,pur_Ananas,pur_Cola,pur_Ingwer,pur_Soda,pur_Vodka,pur_Tequila,pur_Rum,shot_gentleman,shot_Sour,shot_Granate,shot_GingerRum,shot_Judy,shot_Cuba,shot_Vodinas,pur_all,flush_all};
 
 String getRecipeIngredients(Recipe myRecipe) {
   String s = "";

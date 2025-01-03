@@ -4,9 +4,9 @@
 #include "Arduino.h"
 
 #define nb_ingredients 11
-#define nb_cocktails 19
-#define nb_noncocktails 7
-#define nb_prime 11
+#define nb_cocktails 20
+#define nb_noncocktails 11
+#define nb_prime 18
 
 struct Ingredient
 {

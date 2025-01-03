@@ -33,6 +33,7 @@ void loop() {
   loop_WebServer();
   if (Order.mix) {
     mixCocktail();
+    LEDsFinish();
   }
   LEDsIdle();
   checkBattery();

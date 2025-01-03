@@ -8,8 +8,8 @@
 #include "esp_wifi.h"
 #include <FastLED.h>
 
-#define PRIME_ID 11
-#define FLUSH_ID 12
+#define PRIME_ID 18
+#define FLUSH_ID 19
 #define RELAIS_PIN 14
 
 void motorStop();
@@ -25,6 +25,7 @@ void pump(int volume);
 void init_LEDs();
 void checkBattery();
 void checkShutdown();
+void LEDsFinish();
 
 String getBatteryState();
 
