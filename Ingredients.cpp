@@ -1,16 +1,16 @@
 #include "Ingredients.h"
 
-Ingredient Grenadine = {"Grenadine",100,0,0,-104,0};
-Ingredient ZuckerSirup = {"Sirup",25,25,25,-110,0};
-Ingredient Lime= {"Limette",25,75,0,-112,0};
-Ingredient Orange = {"Orange",75,25,0,-120,0};
-Ingredient Ananas = {"Ananas",25,85,10,-112,0};
-Ingredient Cola = {"Cola",75,0,25,-112,0};
-Ingredient Ingwer = {"Ingwer",50,50,0,-100,0};
-Ingredient Soda = {"Soda",0,0,100,-112,0};
-Ingredient Vodka = {"Vodka",25,25,100,-100,0};
-Ingredient Tequila = {"Tequila",50,0,40,-128,0};
-Ingredient Rum = {"Rum",25,0,75,-110,0};
+Ingredient Grenadine = {"Grenadine",100,0,0,-103,0};
+Ingredient ZuckerSirup = {"Sirup",25,25,25,-100,0};
+Ingredient Lime= {"Limette",25,75,0,-100,0};
+Ingredient Orange = {"Orange",75,25,0,-104,0};
+Ingredient Ananas = {"Ananas",25,85,10,-104,0};
+Ingredient Cola = {"Cola",75,0,25,-106,0};
+Ingredient Ingwer = {"Ingwer",50,50,0,-106,0};
+Ingredient Soda = {"Soda",0,0,100,-104,0};
+Ingredient Vodka = {"Vodka",25,25,100,-104,0};
+Ingredient Tequila = {"Tequila",50,0,40,-107,0};
+Ingredient Rum = {"Rum",25,0,75,-104,0};
                                                   //Grenadine, Sirup, Lime,Orange, Ananas, Cola, Ingwer, Soda, Vodka, Tequila, Rum
 extern struct Recipe Tropical_Sunset =       {"Gehirntot",{0,  0,      0,    0,     0,      0,    0,      0,    10,       10,      10}};
 extern struct Recipe Daiquiri =               {"Daiquiri",{0,  2,      2,    0,     0,      0,    0,      2,    0,       0,      4}};

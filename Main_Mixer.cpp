@@ -11,11 +11,11 @@
 #define INI_PIN 12
 
 #define AIR_VOLUME 50  //ml
-#define CUTOFF 2600    // 2.9V/cell, 17.4V
+#define CUTOFF 2700    // 3V/cell, 18V
 #define LOWBAT 2850    // 3.2V/cell, 19.2V
 #define FULLBAT 4000   // 4.2V/cell, 25.2V
 #define LED_IDLE_Brightness 50
-#define STEPS_PER_ML 135  //162  //135
+#define STEPS_PER_ML 125 //135  
 
 Servo myservo;
 CRGB leds[NUM_LEDS];
@@ -193,16 +193,19 @@ void mixCocktail() {
   }
 
   int ingredientSum = 0;
-  int volume = 0;
+  float volume = 0;
   for (int i = 0; i < nb_ingredients; i++) {
     ingredientSum += IngredientRatio[i];
   }
 
   for (int i = 0; i < lastValve; i++) {
     nextValve(i);
-    volume = int(double(IngredientRatio[i]) * double(Order.OrderVolume) / double(ingredientSum));
+    volume = float(double(IngredientRatio[i]) * double(Order.OrderVolume) / double(ingredientSum));
     if (volume > 0) {
       showLEDsIngredient(i);
+      if(volume<=12){
+        volume = volume * 0.6; //Because mixed shots have about 30% to much liquid
+      }
       pump(volume);
       Ingredients_List[i].volume += (double(volume) / 1000);
     }
@@ -220,7 +223,9 @@ void nextValve(int i) {
     getPos();
   }
   motorStop();
-  pump(1);
+  delay(250);
+  pump(0.1);
+  delay(250);
 }
 
 void motorStop() {
@@ -234,9 +239,9 @@ void motorStop() {
     getPos();
     if (millis() - lastStop > 60) {
       lastStop = millis();
-      Serial.println(pos);
-      Serial.println(lastStopPos);
-      Serial.println();
+      //Serial.println(pos);
+      //Serial.println(lastStopPos);
+      //Serial.println();
       if (pos == lastStopPos) {
         running = false;
       } else {
@@ -244,11 +249,11 @@ void motorStop() {
       }
     }
   }
-  Serial.println("End Stop function");
+  //Serial.println("End Stop function");
 }
 
-void pump(int volume) {
-  Serial.println("Pump function running");
+void pump(float volume) {
+  //Serial.println("Pump function running");
   if (volume < 0) {
     volume = 0;
   }

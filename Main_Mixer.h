@@ -21,7 +21,7 @@ void LEDsIdle();
 void init_Valves(bool forceIni);
 void mixCocktail();
 void nextValve(int i);
-void pump(int volume);
+void pump(float volume);
 void init_LEDs();
 void checkBattery();
 void checkShutdown();
